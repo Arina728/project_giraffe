@@ -1,0 +1,106 @@
+$bgPrimary: #DF803E;
+$textColorPrimary: #000000;
+$white: #FCFCFC;
+
+// #C9C9C9   FCFCFC
+// #5C5C5C
+body {
+    font-family: BookmanOldStyle;
+    color: $textColorPrimary;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 34px;
+    text-align: center;
+    margin: 10px;
+}
+
+h4{
+    font-size: 26px;
+}
+
+section{
+    margin: 20px 0px;
+}
+
+b{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+button{
+    cursor: pointer;
+}
+
+#btn-consultation {
+    width: 191px;
+    height: 36px;
+    padding: 10px 16px 10px 16px;
+    border-radius: 5.45px;
+    border: none;
+    background-color: $white;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+ul{
+    counter-reset: numbers;
+    li{
+        position: relative;
+        padding: 20px 0;
+        padding-left: 40px;
+        &::before{
+            counter-increment: numbers;
+            content: '0'counter(numbers);
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            transform: translateY(-50%);
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Roboto;
+        }
+    }
+}
+
+@media(min-width: 767px){
+    .container{
+        max-width: 1200px;
+        padding: 5px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    h4{
+        font-size: 20px;
+    }
+    body {
+        font-size: 25px;
+    }
+}

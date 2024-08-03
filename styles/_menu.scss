@@ -1,0 +1,127 @@
+nav {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
+
+.burger_btns {
+    display: flex;
+    justify-content: flex-end; //space-between расстояние между элементами
+    align-items: center;
+
+    .logo {
+        text-decoration: none;
+        color: $textColorPrimary;
+        display: none;
+        font-size: 31.52px;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    .open-menu {
+        width: 48px;
+        height: 48px;
+        border: none;
+        background-image: url(../images/icons/open-menu.svg);
+
+        background-color: $bgPrimary;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &.active {
+        justify-content: space-between;
+
+        .close-menu,
+        .logo,
+        &+nav {
+            display: block;
+            // background-color: $white;
+        }
+        .open-menu {
+            display: none;
+        }
+    }
+
+    .close-menu {
+        width: 48px;
+        height: 48px;
+        border: none;
+        background-image: url(../images/icons/close-menu.svg);
+        background-color: $bgPrimary;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &+nav {
+        display: none;
+        background-image: url(../images/Giraffe.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 140px 195px;
+        padding-bottom: 354px;
+
+        a {
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            color: $textColorPrimary;
+            font-size: 19px;
+        }
+    }
+}
+
+
+@media(min-width: 767px){
+    // nav {
+    // }
+    
+    // .close-menu {
+    // }
+    
+    .burger_btns {
+        display: none;
+    
+        // &.active {
+        //     .close-menu,
+        //     .logo,
+        //     &+nav {}
+        //     .open-menu {}
+        // }
+    
+        // .close-menu {}
+    
+        & + nav,
+        &.active + nav{
+            display: flex;
+            padding-bottom: 0px;
+            background-image: none;
+        }
+    }
+    
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    
+}
+
+.contacts{
+    display: flex;
+    a.icon{
+        // background-color: red;
+        width: 40px;
+        height: 40px;
+        margin-left: 24px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        &.phone{background-image: url(../images/icons/телефон.svg);}
+        &.location{background-image: url(../images/icons/локація.svg);}
+        &.email{background-image: url(../images/icons/пошта.svg);}
+    }
+    // background-image: url(../images/icons/телефон.svg);
+}
+}

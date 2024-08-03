@@ -1,0 +1,78 @@
+.merits {
+    background-color: $white;
+    height: 640px;
+    
+
+    b {
+        color: $bgPrimary;
+    }
+
+    .block {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .mer {
+            border: 1px solid black;
+            border-radius: 10%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: 60px 60px;
+            height: 121px;
+            width: 140px;
+            margin: 15px 4px;
+            position: relative;
+
+            p {
+                margin-top: 75px;
+                text-align: center;
+                position: relative;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+.calendar{
+    background-image: url(../images/merits/calendar.svg);
+}
+.book{
+    background-image: url(../images/merits/book.svg);
+}
+.teacher{
+    background-image: url(../images/merits/teacher.svg);
+}
+.success{
+    background-image: url(../images/merits/success.svg);
+}
+.handshake{
+    background-image: url(../images/merits/handshake.svg);
+}
+.student{
+    background-image: url(../images/merits/graduating-student.svg);
+}
+
+@media(min-width: 767px) {
+    .merits {
+        height: 800px;
+        .block {
+            width: 1200px;
+            width: 1200px;
+
+            .mer {
+                height: 300px;
+                width: 300px;
+                border-radius: 5%;
+                background-size: 200px 200px;
+                
+                p {
+                    margin-top: 250px;
+                    text-align: center;
+                    position: relative;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

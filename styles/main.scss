@@ -1,0 +1,14 @@
+// сначала пишем use
+@use 'fonts';
+
+// потім файл зі змінною
+@import 'common';
+// і файл, якому потрібна ця змінна
+@import 'header';
+@import 'menu';
+@import 'direction-works.section.scss';
+// @import 'reviews';
+@import 'merits';
+@import 'grid';
+@import 'for_slick';
+@import 'footer';

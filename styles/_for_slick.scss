@@ -1,0 +1,24 @@
+.slide1{
+    height: 330px;
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px;
+    background-color: $bgPrimary;
+    border-radius: 10%;
+}
+@media(min-width: 767px) {
+    .reviews {
+        width: 1050px;
+        margin: 0 auto;
+        .slick-prev {
+            left: -70px;
+            top: 0px;
+        }
+    
+        .slick-next {
+            right: -70px;
+            top: 0px;
+        }
+    }
+
+}

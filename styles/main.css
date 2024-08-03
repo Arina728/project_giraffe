@@ -1,0 +1,435 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "BookmanOldStyle";
+  src: url(../fonts/bookmanoldstyle.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "BookmanOldStyle";
+  src: url(../fonts/bookmanoldstyle_bold.ttf);
+  font-weight: 700;
+}
+body {
+  font-family: BookmanOldStyle;
+  color: #000000;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 34px;
+  text-align: center;
+  margin: 10px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+section {
+  margin: 20px 0px;
+}
+
+b {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#btn-consultation {
+  width: 191px;
+  height: 36px;
+  padding: 10px 16px 10px 16px;
+  border-radius: 5.45px;
+  border: none;
+  background-color: #FCFCFC;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+ul {
+  counter-reset: numbers;
+}
+ul li {
+  position: relative;
+  padding: 20px 0;
+  padding-left: 40px;
+}
+ul li::before {
+  counter-increment: numbers;
+  content: "0" counter(numbers);
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+}
+
+@media (min-width: 767px) {
+  .container {
+    max-width: 1200px;
+    padding: 5px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  body {
+    font-size: 25px;
+  }
+}
+header {
+  background-color: #DF803E;
+  background-image: url(../images/Giraffe.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 160px 195px;
+  padding-bottom: 410px;
+  position: relative;
+}
+
+@media (min-width: 767px) {
+  header {
+    width: auto;
+    height: 320px;
+  }
+  header nav {
+    margin: 10px;
+  }
+}
+nav {
+  display: none;
+}
+
+.close-menu {
+  display: none;
+}
+
+.burger_btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.burger_btns .logo {
+  text-decoration: none;
+  color: #000000;
+  display: none;
+  font-size: 31.52px;
+  font-weight: bold;
+  margin: 10px;
+}
+.burger_btns .open-menu {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-image: url(../images/icons/open-menu.svg);
+  background-color: #DF803E;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.burger_btns.active {
+  justify-content: space-between;
+}
+.burger_btns.active .close-menu,
+.burger_btns.active .logo, .burger_btns.active + nav {
+  display: block;
+}
+.burger_btns.active .open-menu {
+  display: none;
+}
+.burger_btns .close-menu {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-image: url(../images/icons/close-menu.svg);
+  background-color: #DF803E;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.burger_btns + nav {
+  display: none;
+  background-image: url(../images/Giraffe.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 140px 195px;
+  padding-bottom: 354px;
+}
+.burger_btns + nav a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #000000;
+  font-size: 19px;
+}
+
+@media (min-width: 767px) {
+  .burger_btns {
+    display: none;
+  }
+  .burger_btns + nav, .burger_btns.active + nav {
+    display: flex;
+    padding-bottom: 0px;
+    background-image: none;
+  }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+  }
+  .contacts {
+    display: flex;
+  }
+  .contacts a.icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .contacts a.icon.phone {
+    background-image: url(../images/icons/телефон.svg);
+  }
+  .contacts a.icon.location {
+    background-image: url(../images/icons/локація.svg);
+  }
+  .contacts a.icon.email {
+    background-image: url(../images/icons/пошта.svg);
+  }
+}
+.direction_works {
+  background-color: #DF803E;
+  height: 750px;
+}
+.direction_works b {
+  color: #FCFCFC;
+}
+.direction_works ul {
+  counter-reset: numbers;
+}
+.direction_works ul li {
+  position: relative;
+  padding: 20px 0;
+  padding-left: 40px;
+  border-bottom: 1px solid #000;
+}
+.direction_works ul li::before {
+  counter-increment: numbers;
+  content: "0" counter(numbers);
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+}
+
+#btn-request {
+  margin: 0 auto;
+  display: block;
+  width: 191px;
+  height: 36px;
+  padding: 10px 16px 10px 16px;
+  border-radius: 5.45px;
+  border: 1px solid black;
+  background-color: #DF803E;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.overlay.active {
+  display: flex;
+}
+.overlay .content {
+  background-color: #FCFCFC;
+  max-width: 550px;
+  width: 90%;
+  min-height: 465px;
+  border-radius: 15%;
+  padding: 10px;
+  text-align: center;
+}
+
+.merits {
+  background-color: #FCFCFC;
+  height: 640px;
+}
+.merits b {
+  color: #DF803E;
+}
+.merits .block {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.merits .block .mer {
+  border: 1px solid black;
+  border-radius: 10%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 60px 60px;
+  height: 121px;
+  width: 140px;
+  margin: 15px 4px;
+  position: relative;
+}
+.merits .block .mer p {
+  margin-top: 75px;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+}
+
+.calendar {
+  background-image: url(../images/merits/calendar.svg);
+}
+
+.book {
+  background-image: url(../images/merits/book.svg);
+}
+
+.teacher {
+  background-image: url(../images/merits/teacher.svg);
+}
+
+.success {
+  background-image: url(../images/merits/success.svg);
+}
+
+.handshake {
+  background-image: url(../images/merits/handshake.svg);
+}
+
+.student {
+  background-image: url(../images/merits/graduating-student.svg);
+}
+
+@media (min-width: 767px) {
+  .merits {
+    height: 800px;
+  }
+  .merits .block {
+    width: 1200px;
+    width: 1200px;
+  }
+  .merits .block .mer {
+    height: 300px;
+    width: 300px;
+    border-radius: 5%;
+    background-size: 200px 200px;
+  }
+  .merits .block .mer p {
+    margin-top: 250px;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+  }
+}
+.traveling p {
+  margin-left: 3px;
+}
+.traveling .grid {
+  margin-left: 3px;
+  opacity: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 156px);
+  grid-template-rows: 172px 155px 72px 130px 30px 70px;
+  gap: 5px;
+}
+.traveling .grid div:nth-child(3) {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.traveling .grid div:nth-child(3) img {
+  width: 310px;
+}
+.traveling .grid div:nth-child(4) {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+.traveling .grid div:nth-child(4) img {
+  width: 310px;
+}
+.traveling .grid div:nth-child(7) {
+  grid-column: 1/2;
+  grid-row: -1/-2;
+}
+.traveling .grid div:nth-child(8) {
+  grid-column: 2/3;
+  grid-row: 5/7;
+}
+
+.slide1 {
+  height: 330px;
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px;
+  background-color: #DF803E;
+  border-radius: 10%;
+}
+
+@media (min-width: 767px) {
+  .reviews {
+    width: 1050px;
+    margin: 0 auto;
+  }
+  .reviews .slick-prev {
+    left: -70px;
+    top: 0px;
+  }
+  .reviews .slick-next {
+    right: -70px;
+    top: 0px;
+  }
+}
+footer {
+  height: 280px;
+  background-color: #DF803E;
+}/*# sourceMappingURL=main.css.map */
