@@ -40,6 +40,7 @@ nav {
             display: block;
             // background-color: $white;
         }
+
         .open-menu {
             display: none;
         }
@@ -74,54 +75,47 @@ nav {
 }
 
 
-@media(min-width: 767px){
-    // nav {
-    // }
-    
-    // .close-menu {
-    // }
-    
+@media(min-width: 767px) {
     .burger_btns {
         display: none;
-    
-        // &.active {
-        //     .close-menu,
-        //     .logo,
-        //     &+nav {}
-        //     .open-menu {}
-        // }
-    
-        // .close-menu {}
-    
-        & + nav,
-        &.active + nav{
+
+        &+nav,
+        &.active+nav {
             display: flex;
             padding-bottom: 0px;
             background-image: none;
         }
     }
-    
-.header-top{
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
-    
-}
 
-.contacts{
-    display: flex;
-    a.icon{
-        // background-color: red;
-        width: 40px;
-        height: 40px;
-        margin-left: 24px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        &.phone{background-image: url(../images/icons/телефон.svg);}
-        &.location{background-image: url(../images/icons/локація.svg);}
-        &.email{background-image: url(../images/icons/пошта.svg);}
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        width: 1200px;
+
     }
-    // background-image: url(../images/icons/телефон.svg);
-}
+
+    .contacts {
+        display: flex;
+
+        a.icon {
+            width: 40px;
+            height: 40px;
+            margin-left: 24px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom;
+
+            &.phone {
+                background-image: url(../images/icons/телефон.svg);
+            }
+
+            &.location {
+                background-image: url(../images/icons/локація.svg);
+            }
+
+            &.email {
+                background-image: url(../images/icons/пошта.svg);
+            }
+        }
+    }
 }

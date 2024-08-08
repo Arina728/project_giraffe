@@ -1,0 +1,27 @@
+
+.info{
+    .imgR{
+        display: none;
+    }
+}
+
+@media(min-width: 767px) {
+    .info{
+        .imgR{
+            display: flex;
+            width: 450px;
+        }
+        .imgC{
+            display: none;
+        }
+        .space{
+            display: flex;
+            justify-content: space-between;
+            width: 1200px;
+    
+            h3{
+                text-align: left;
+            }
+        }
+    }
+}
