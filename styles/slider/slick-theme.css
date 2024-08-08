@@ -58,7 +58,8 @@
 }
 
 .slick-prev {
-  top: 380px;
+  left: 0px;
+  top: 410px;
 }
 [dir=rtl] .slick-prev {
   left: auto;
@@ -78,7 +79,7 @@
 
 .slick-next {
   right: 0px;
-  top: 380px;
+  top: 410px;
 }
 [dir=rtl] .slick-next {
   left: auto;
@@ -97,10 +98,6 @@
 }
 
 /* Dots */
-.slick-dotted.slick-slider {
-  margin-bottom: 30px;
-}
-
 .slick-dots {
   position: absolute;
   bottom: -25px;
