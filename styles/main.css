@@ -36,7 +36,9 @@ h4 {
 }
 
 section {
-  margin: 20px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 20px;
 }
 
 b {
@@ -93,16 +95,6 @@ ul li::before {
     margin-right: auto;
     display: block;
   }
-  h2 {
-    font-size: 30px;
-  }
-  h3 {
-    font-size: 24px;
-    text-align: center;
-  }
-  h4 {
-    font-size: 20px;
-  }
   body {
     font-size: 25px;
   }
@@ -112,13 +104,15 @@ header {
   background-image: url(../images/Giraffe.png);
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-size: 160px 195px;
-  padding-bottom: 410px;
+  background-size: 140px 195px;
+  padding-bottom: 387px;
   position: relative;
 }
 
 @media (min-width: 767px) {
   header {
+    background-size: 240px;
+    padding-bottom: 387px;
     width: auto;
     height: 320px;
   }
@@ -181,7 +175,7 @@ nav {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 140px 195px;
-  padding-bottom: 354px;
+  padding-bottom: 349px;
 }
 .burger_btns + nav a {
   text-decoration: none;
@@ -321,10 +315,10 @@ nav {
   position: relative;
 }
 .merits .block .mer p {
-  margin-top: 75px;
+  margin-top: 70px;
   text-align: center;
   position: relative;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .calendar {
@@ -432,4 +426,10 @@ nav {
 footer {
   height: 280px;
   background-color: #DF803E;
+  padding-bottom: 20px;
+}
+
+.footLogo {
+  font-weight: 600;
+  text-align: left;
 }/*# sourceMappingURL=main.css.map */

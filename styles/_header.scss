@@ -1,35 +1,25 @@
 header{
     background-color: $bgPrimary;
     background-image: url(../images/Giraffe.png);
+    // background-repeat: no-repeat;
+    // background-position: bottom center;
+    // background-size: 160px 195px;
+    // padding-bottom: 410px;
+    // position: relative;
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-size: 160px 195px;
-    padding-bottom: 410px;
+    background-size: 140px 195px;
+    padding-bottom: 387px;
     position: relative;
-    // padding-top: 40px;
-    // height: 340px;
-    // &::after{
-    //     content: '';
-    //     position: absolute;
-    //     transform: translateX(-50%);
-    //     // margin-bottom: 50px;
-    //     // bottom: 0px;
-    //     bottom: -10px;
-    //     left: 50%;
-    //     width: 51px;
-    //     height: 0px;
-    //     border-left: 160px solid transparent;
-    //     border-right: 150px solid transparent;
-    //     border-bottom: 250px solid $white;
-    //     z-index: 0;
-    // }
 }
 
 
 @media(min-width: 767px) {
     header{
-        // width: 1200px;
-        // padding: 0px 15px;
+        // background-size: 160px 195px;
+        // padding-bottom: 410px;
+    background-size: 240px;
+    padding-bottom: 387px;
         width: auto;
         height: 320px;
         nav{
