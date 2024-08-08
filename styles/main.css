@@ -89,7 +89,7 @@ ul li::before {
 
 @media (min-width: 767px) {
   .container {
-    max-width: 1200px;
+    max-width: 100%;
     padding: 5px;
     width: auto;
     margin-left: auto;
@@ -98,6 +98,11 @@ ul li::before {
   }
   body {
     font-size: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
 }
 header {
@@ -198,7 +203,6 @@ nav {
   .header-top {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
   }
   .contacts {
     display: flex;
@@ -349,11 +353,7 @@ nav {
 
 @media (min-width: 767px) {
   .merits {
-    height: 800px;
-  }
-  .merits .block {
-    width: 1200px;
-    width: 1200px;
+    height: 1100px;
   }
   .merits .block .mer {
     height: 300px;
@@ -366,6 +366,11 @@ nav {
     text-align: center;
     position: relative;
     font-size: 20px;
+  }
+}
+@media (min-width: 976px) {
+  .merits {
+    height: 800px;
   }
 }
 .traveling .grid {
@@ -462,6 +467,26 @@ nav {
 }
 
 @media (min-width: 767px) {
+  .reviews {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .reviews .slide1 {
+    padding: 40px;
+    height: 200px;
+  }
+  .reviews .slick-prev {
+    left: -70px;
+    top: 40%;
+    margin-left: 20px;
+  }
+  .reviews .slick-next {
+    right: -70px;
+    top: 40%;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
   .reviews {
     width: 1050px;
     margin: 0 auto;

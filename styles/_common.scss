@@ -84,7 +84,7 @@ ul{
 
 @media(min-width: 767px){
     .container{
-        max-width: 1200px;
+        max-width: 100%;
         padding: 5px;
         width: auto;
         margin-left: auto;
@@ -95,3 +95,9 @@ ul{
         font-size: 25px;
     }
 }
+@media(min-width: 1200px){
+    .container{
+        max-width: 1200px;
+    }
+}
+

@@ -55,11 +55,8 @@
 
 @media(min-width: 767px) {
     .merits {
-        height: 800px;
+        height: 1100px;
         .block {
-            width: 1200px;
-            width: 1200px;
-
             .mer {
                 height: 300px;
                 width: 300px;
@@ -74,5 +71,12 @@
                 }
             }
         }
+    }
+}
+
+@media(min-width: 976px) {
+    .merits {
+        height: 800px;
+        
     }
 }
